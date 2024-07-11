@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Prueba para ingresar al sistema</h1>
+        <h1>Prueba para ingresar al sistema usando metodo GET</h1>
         <form name="Ingreso" action="RecibaDatos" method="get">
             <br></br>
             Usuario: <input type="text" name="usuario" value=""/>
@@ -16,7 +16,16 @@
             <br></br>
             <input type="submit" value="enviar" />
         </form>
-        
+        <br></br>
+        <h1>Prueba para ingresar al sistema usando metodo POST</h1>
+        <form name="Ingreso" action="RecibaDatos" method="post">
+            <br></br>
+            Usuario: <input type="text" name="usuario" value=""/>
+            <br></br>
+            Clave: <input type="password" name="clave" value=""/>
+            <br></br>
+            <input type="submit" value="enviar" />
+        </form>
         
     </body>
 </html>

@@ -77,7 +77,14 @@ public class RecibaDatos extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    //    processRequest(request, response);
+        
+        String user = request.getParameter("usuario");
+        String pass = request.getParameter("clave");
+        
+        if ("admin".equals(user) && "1234".equals(pass)){
+            processRequest(request, response,"Datos ingresados son correctos");
+        }
+        processRequest(request, response,"Datos ingresados son incorrectos");
     }
 
     /**
